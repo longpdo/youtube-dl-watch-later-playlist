@@ -8,7 +8,6 @@ from termcolor import colored
 import getpass
 import subprocess
 
-# CREDITS: https://gist.github.com/ikegami-yukino/51b247080976cb41fe93#gistcomment-3181443
 download_folder = '~/Downloads/'
 
 
@@ -37,7 +36,7 @@ def login_to_google(driver, username, password):
     verify_password(password)
 
     # Waits until redirect to stackoverflow.com occurs
-    wait = WebDriverWait(driver, 60)
+    wait = WebDriverWait(driver, 300)
     wait.until(EC.url_contains("stackoverflow.com"))
     print(colored('Login successful.', 'green'))
 
