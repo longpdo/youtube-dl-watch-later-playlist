@@ -1,33 +1,16 @@
-<!-- MARKDOWN LINKS & IMAGES -->
-[product-screenshot]: images/example.gif
-[usage-input-screenshot]: images/example_input.gif
-[usage-wrong-input-screenshot]: images/example_wrong_input.gif
+# YouTube-DL-Watch-Later-Playlist <!-- omit in toc -->
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <!-- <a href="https://github.com/longpdo/youtube-dl-watch-later-playlist">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a> -->
+> Python script to download YouTube videos from your Watch Later Playlist
 
-  <h3 align="center">YouTube-DL-Watch-Later-Playlist</h3>
+[![Open Issues](https://badgen.net/github/open-issues/longpdo/youtube-dl-watch-later-playlist)](https://github.com/longpdo/youtube-dl-watch-later-playlist/issues)
+[![License](https://badgen.net/github/license/longpdo/youtube-dl-watch-later-playlist)](LICENSE)
 
-  <p align="center">
-    Python script to download YouTube videos from your Watch Later Playlist
-    <br />
-    <a href="https://github.com/longpdo/youtube-dl-watch-later-playlist/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/longpdo/youtube-dl-watch-later-playlist/issues">Request Feature</a>
-    <br />
-    <br />
-    <a href="https://github.com/longpdo/youtube-dl-watch-later-playlist/issues"><img src="https://badgen.net/github/open-issues/longpdo/youtube-dl-watch-later-playlist" /></a>
-    <a href="LICENSE"><img src="https://badgen.net/github/license/longpdo/youtube-dl-watch-later-playlist" /></a>
-  </p>
-</p>
+[Report Bug](https://github.com/longpdo/youtube-dl-watch-later-playlist/issues) · [Request Feature](https://github.com/longpdo/youtube-dl-watch-later-playlist/issues)
 
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
-* [About the Project](#about-the-project)
+## Table of Contents <!-- omit in toc -->
+
+* [About The Project](#about-the-project)
   * [Built With](#built-with)
   * [Features](#features)
 * [Getting Started](#getting-started)
@@ -41,6 +24,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
 [![Product Screenshot][product-screenshot]](https://github.com/longpdo/youtube-dl-watch-later-playlist/)
 
 `youtube-dl-watch-later-playlist.py` is a python script to automatically download all YouTube videos from your current Watch Later Playlist. The script will start `Chromedriver` and login to your Google Account.
@@ -52,56 +36,75 @@ The script also works when your Google Account has `Two-Factor Authentication` a
 After successfully logging in to Google and being redirected to `stackoverflow.com`, `Chromedriver` will move to `https://www.youtube.com/playlist?list=WL` and crawl the links for all the videos in the playlist and the script will start downloading them with `youtube-dl`.
 
 ### Built With
+
 * [Python 3.7.6](https://www.python.org/downloads/)
 * [Selenium](https://pypi.org/project/selenium/)
 
 ### Features
+
 * Colored Terminal output with [termcolor](https://pypi.org/project/termcolor/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
+
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
+
 * Python 3
+
 ```sh
 # Install via brew on macOS
 brew install python
 ```
+
 For Linux and Windows refer to [this](https://realpython.com/installing-python/).
 
 * Chromedriver
+
 ```sh
 brew cask install chromedriver
 ```
+
 For Linux and Windows refer to [this](https://sites.google.com/a/chromium.org/chromedriver/downloads).
 
 * youtube-dl
+
 ```sh
 brew install youtube-dl
 ```
+
 For Linux and Windows refer to [this](http://ytdl-org.github.io/youtube-dl/download.html).
 
 ### Installation
-1. Clone the youtube-dl-watch-later-playlist repository
+
+1: Clone the youtube-dl-watch-later-playlist repository
+
 ```sh
 git clone https://github.com/longpdo/youtube-dl-watch-later-playlist.git
 ```
-2. Change directory to youtube-dl-watch-later-playlist
+
+2: Change directory to youtube-dl-watch-later-playlist
+
 ```sh
 cd youtube-dl-watch-later-playlist
 ```
-3. Install python requirements
+
+3: Install python requirements
+
 ```sh
 pip3 install -r requirements.txt
 ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+
 * Start the download script
+
 ```sh
 python3 youtube-dl-watch-later-playlist.py
 ```
+
 * The script will prompt you for your `google username` and your `google password`
 
 ![Usage Input Screenshot][usage-input-screenshot]
@@ -112,13 +115,16 @@ python3 youtube-dl-watch-later-playlist.py
 ![Usage Wrong Input Screenshot][usage-wrong-input-screenshot]
 
 ### Customize
+
 * You can change the download folder for the videos in line 11:
-```
+
+```text
 download_folder = '~/Downloads/'
 ```
 
 <!-- CONTRIBUTING -->
 ## Contributing
+
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
@@ -129,9 +135,16 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- LICENSE -->
 ## License
+
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
+
 * [Workaround for Google Login issue](https://gist.github.com/ikegami-yukino/51b247080976cb41fe93#gistcomment-3181443) - 'This browser or app may not be secure'
 * [youtube-dl](http://ytdl-org.github.io/youtube-dl/)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[product-screenshot]: images/example.gif
+[usage-input-screenshot]: images/example_input.gif
+[usage-wrong-input-screenshot]: images/example_wrong_input.gif
