@@ -78,19 +78,22 @@ For Linux and Windows refer to [this](http://ytdl-org.github.io/youtube-dl/downl
 
 ### Installation
 
-1: Clone the youtube-dl-watch-later-playlist repository
+1: Fork the repository (using the `Fork` button at the top)
+
+2: Clone the repository
 
 ```sh
-git clone https://github.com/longpdo/youtube-dl-watch-later-playlist.git
+# Replace {YOUR_USERNAME} with your actual username
+git clone https://github.com/{YOUR_USERNAME}/youtube-dl-watch-later-playlist.git
 ```
 
-2: Change directory to youtube-dl-watch-later-playlist
+3: Change directory to youtube-dl-watch-later-playlist
 
 ```sh
 cd youtube-dl-watch-later-playlist
 ```
 
-3: Install python requirements
+4: Install python requirements
 
 ```sh
 pip3 install -r requirements.txt
@@ -125,7 +128,7 @@ download_folder = '~/Downloads/'
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
