@@ -18,6 +18,7 @@
   * [Installation](#installation)
 * [Usage](#usage)
   * [Customize](#customize)
+* [Known Issues](#known-issues)
 * [Contributing](#contributing)
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
@@ -27,7 +28,7 @@
 
 [![Product Screenshot][product-screenshot]](https://github.com/longpdo/youtube-dl-watch-later-playlist/)
 
-`youtube-dl-watch-later-playlist.py` is a python script to automatically download all YouTube videos from your current Watch Later Playlist. The script will start `Chromedriver` and login to your Google Account.
+`youtube-dl-watch-later-playlist.py` is a python script to automatically download ~~all~~ [the first 100](#known-issues) YouTube videos from your current Watch Later Playlist. The script will start `Chromedriver` and login to your Google Account. 
 
 Logging in to your Google Account is currently done by signing up at `stackoverflow.com` via Google, since logging in to Google directly at YouTube won't work due to Google not trusting automated Webbrowsers like `Chromedriver`. The workaround works, since `stackoverflow.com` is one of the trusted apps by Google.
 
@@ -124,6 +125,10 @@ python3 youtube-dl-watch-later-playlist.py
 ```text
 download_folder = '~/Downloads/'
 ```
+
+### Known Issues
+
+* [Open Issue](https://github.com/longpdo/youtube-dl-watch-later-playlist/issues/1#issue-755254593): Will only download the first 100 entries of your Watch Later Playlist
 
 <!-- CONTRIBUTING -->
 ## Contributing
